@@ -207,8 +207,9 @@ a:focus {
 #headerwrap {
 	background-image: url('../img/atto.jpg');
     background-size: cover;
-	
-	min-height: 800px;
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+	min-height: 860px;
 	padding-top: 100px;
 	padding-bottom: 0px;
 
@@ -234,7 +235,7 @@ a:focus {
 
 /* Services Wrap */
 #service {
-	margin-top: 100px;
+	margin-top: 20px;
 	margin-bottom: 80px;
 }
 
@@ -246,7 +247,7 @@ a:focus {
 
 /* Portfolio Wrap */
 #portfoliowrap {
-	padding-top: 60px;
+	padding-top: 20px;
 	
 	display: block;
 	text-align: center
