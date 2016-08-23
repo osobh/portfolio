@@ -205,12 +205,16 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: #00b3fe;
-	min-height: 550px;
+	background-image: url('../img/atto.jpg');
+    background-size: cover;
+	
+	min-height: 800px;
 	padding-top: 100px;
 	padding-bottom: 0px;
-	text-align: center;
+
 }
+
+
 
 #headerwrap h3, h5 {
 	color: white;
@@ -223,8 +227,10 @@ a:focus {
 }
 
 #headerwrap .img-responsive {
-	margin: 0 auto;
+	background-size: 100% auto;
 }
+
+
 
 /* Services Wrap */
 #service {
@@ -241,7 +247,7 @@ a:focus {
 /* Portfolio Wrap */
 #portfoliowrap {
 	padding-top: 60px;
-	margin-bottom: 60px;
+	
 	display: block;
 	text-align: center
 }
