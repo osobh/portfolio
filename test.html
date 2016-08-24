@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="assets/js/typed.js"></script>
 <style>
 
 body { 
@@ -11,34 +13,51 @@ background-position:center; }
 
 div{ 
 opacity: 0.5; 
-width:850px; 
+width: 850px; 
 height: 100%; 
 margin-left:auto; 
 margin-right:auto; 
 padding: 15px; 
-background-color:#95a5a6; }
+background-color: black;
+color: #2ecc71; }
 
-p{ color: #00ff00 ; }
+p{ color: #2ecc71 ; }
 
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color: red;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 </style>
 </head>
 <body>
-<div> <p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p> 
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-<p> rtjkjksfjksjdfkjsdkfjskdfjskfjskdfjskfjskdfjkjasfjas;dfj;ksajf;askjfd </p>
-
+<div class="element">
+<script>
+    $(function(){
+        $(".element").typed({
+            strings: ["Welcome to ONS Portfolio Site", "Second sentence."],
+            typeSpeed: 0
+        });
+    });
+</script>
 </div>
+
 </body>
 </html>
