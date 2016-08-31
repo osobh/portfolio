@@ -208,7 +208,9 @@ a:focus {
 	background-image: url('../img/atto.jpg');
     background-size: cover;
 	-webkit-filter: blur(3px);
+	/*-webkit-filter: grayscale(100%);*/
 	filter: blur(3px);
+	filter: grayscale(100%);
 	min-height: 860px;
 	padding-top: 100px;
 	padding-bottom: 0px;
