@@ -1,161 +1,290 @@
-
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Omar Sobh - ONS</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="utf-8" />
-		
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@taggerz">
-		<meta property="og:title" content="Omar Sobh ONS: Portfolio" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://osobh.github.io/portfolio" />
-		<meta property="og:image" content="http://osobh.github.io/portfolio/wall.img" />
-		<meta property="og:description" content="devOps Engineer &middot; Full Stack Developer" />
-		<meta property="og:locale" content="en_US" />
-		
-		<!-- Bootstrap -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-		<link href="assets/css/style2.css" rel="stylesheet" media="screen">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-		<script src="../../assets/js/html5shiv.js"></script>
-		<script src="../../assets/js/respond.min.js"></script>
-		<![endif]-->
-		
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="assets/js/collapse.js" type="text/javascript"></script>
-		<script src="assets/js/typer.js" type="text/javascript"></script>
-		<script src="assets/js/blur.min.js" type="text/javascript"></script>
-		
-		<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
-		
-		<script>
-	    $( document ).ready(function() {
-	    	
-	       
-	       	setTimeout(function () {
-	            $('[data-typer-targets]').typer();
-	            $.typer.options.typerInterval = 3000;
-	        }, 2000);
-	        
-	     });
-	    
-	    $(window).load(function(){
-    		
-    		if($(window).width() > 768) {
-    			$('.name-container').css(
-    			{
-    				position: 'absolute',
-    			    left: ($(window).width() - $('.name-container').outerWidth()) / 2,
-    			    top: ($(window).height() - $('.name-container').outerHeight()) / 2,
-    			    opacity: 1
-    			});
-    		}
-    		else {
-    			$('.name-container').css(
-    			{
-    				position: 'relative',
-    				top: 0,
-    				left: 0
-    			});
-    		}
-    	    
-    	
-    		$(window).resize(function()
-    		{
-    			if($(window).width() > 768) {
-	    			$('.name-container').css(
-	    			{
-	    				position: 'absolute',
-	    				left: ($(window).width() - $('.name-container').outerWidth()) / 2,
-	    				top: (($(window).height() - $('.name-container').outerHeight()) / 2) - 10,
-	    				opacity: 1
-	    			});
-	    		}
-	    		else {
-	    			$('.name-container').css(
-	    			{
-	    				position: 'relative',
-	    				top: 0,
-	    				left: 0
-	    			});
-	    		}
-    		});
-    		
-    		// call `resize` to center elements
-    		$(window).resize();
-	    });
-		</script>
-		<style type="text/css">
-			body.background {
-				background-image: url('assets/img/wall2.jpg');
-    			background-size: cover;
-				background-repeat:no-repeat;
-				padding: 0px;
-				margin: 0px;
-				background-position: center center;
-				height: 100%;
-				background-color: #000;
-				background-attachment: fixed;
-			}
-			.blurred-background {
-				width: 100%;
-				height: 100%;
-				margin: 0px;
-				padding: 0px;
-				background-size: cover;
-				background-position: center center;
-				background-attachment: fixed;
-			}
-			
-		</style>
-	
+	<title>Omar Nahil Sobh - ONS</title>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+       
 </head>
-	
-	<body class="background">
-	
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Hello, my name is Omar Sobh and I am a</div>
+			<h1>DevOps | Full Stack Engineer</h1>
+			<div class="start">I aspire to create scalable systems for modern web applications</div>
+		</div>
+
+        <a href="#portfolio">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
 			<div class="container">
+
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					
-					<a class="navbar-brand" href="/">Omar Sobh - ONS</a>
+					<a class="navbar-brand" href="index.html">Omar Sobh</a>
 				</div>
-				<div class="collapse navbar-collapse">
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="index">Home</a></li>
-						<li><a href="about">About</a></li>
-						<li><a href="portfolio">Portfolio</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Works</a></li>
+                        <li><a href="assets/img/resume.pdf">Resume</a></li>	
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
-			</div>
-		</nav>
-		
-		<div class="blurred-background ">
-			<main class="name-container">
-				<img src="assets/img/logo.png" alt="logo" class="logo"  />
-				<hr />
-				<h1>Omar<span style="font-weight: 400;">Sobh</span></h1>
-				
-				<h2 data-typer-targets=' Full Stack Developer, Node.js &middot; Full Stack Developer, Python &middot; Full Stack Developer, AngularJS &middot; Full Stack Developer, Docker &middot; DevOps, AWS &middot; DevOps, Mesos &middot; DevOps, OpenStack &middot; DevOps, Distributed Systems '>DevOps Engineer &middot; Full Stack Developer</h2>
-				<hr />
-				<p class="text-center hidden-xs"><a href="about" class="btn btn-transparent btn-lg btn-same-size">About</a>&nbsp;<a href="portfolio" class="btn btn-transparent btn-lg btn-same-size">Portfolio</a>&nbsp;<a href="/cdn-cgi/l/email-protection#3f5c5e4f5e4a485a534c7f58525e5653115c5052" target="_blank" class="btn btn-transparent btn-lg btn-same-size">Contact</a></p>
-				
-				<p class="text-center visible-xs"><a href="about" class="btn btn-transparent btn-same-size">About</a>&nbsp;<a href="portfolio" class="btn btn-transparent btn-same-size">Portfolio</a>&nbsp;<a href="/cdn-cgi/l/email-protection#2e4d4f5e4f5b594b425d6e49434f4742004d4143" target="_blank" class="btn btn-transparent btn-same-size">Contact</a></p>
-				
-			</main>
 
-			
-		</div>
-	</body>
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+    
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My PortFolio</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							This portfolio contains some projects that I had developed over the years with a variety of technologies and deployment possibilities.
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+            
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/cloudsounds.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Cloud <span>Sounds</span></h2>
+                                <p>Social Music Playlist Sharing</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/cguild.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Code <span>Guild</span></h2>
+                                <p>Code Learning and Reviewing Platform</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/heart.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>i<span>&hearts;</span>Caller</h2>
+                                <p>Online Radio Real-time communication</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/trap.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Trap<span>World</span></h2>
+                                <p>Crime Data Analysis and Visualization</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/scicon.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Sci <span>Con</span></h2>
+                                <p>Data Science Cloud Environments</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/wall.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Project <span>Z</span></h2>
+                                <p>Augmented Reality Overlays</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock pfblock-gray"r>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Drop me a line</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							I'm always interested in exploring new opportunities and positions anywhere in the world, feel free to send me a quick email.
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+					<a href="mailto:om.sobh@gmail.com" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</a>
+					
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+				<!-- 	<ul class="social-links">
+						<li><a href="index.html#" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".5s"><i class="fa fa-envelope"></i></a></li>
+					</ul> -->
+
+					<p class="heart">
+                        Made with <span class="fa fa-heart fa-2x animated pulse"></span> in San Francisco, California
+                    </p>
+                    <p class="copyright">
+                        © 2016 Omar Sobh
+					</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+    
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
 </html>

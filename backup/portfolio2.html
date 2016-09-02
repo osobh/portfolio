@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Omar Sobh - ONS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@taggerz">
+		<meta property="og:title" content="Omar Sobh ONS: Portfolio" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://osobh.github.io/portfolio" />
+		<meta property="og:image" content="http://osobh.github.io/portfolio/wall.img" />
+		<meta property="og:description" content="devOps Engineer &middot; Full Stack Developer" />
+		<meta property="og:locale" content="en_US" />
+		
+		<!-- Bootstrap -->
+
+		<link href="assets/css/style2.css" rel="stylesheet" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="../../assets/js/html5shiv.js"></script>
+		<script src="../../assets/js/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/collapse.js" type="text/javascript"></script>
+		<script src="assets/js/blur.min.js" type="text/javascript"></script>
+		
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
+		
+		<script>
+	    $( document ).ready(function() {
+	    
+	        
+	     });
+	    
+	    $(window).load(function(){
+    		
+    		if($(window).width() > 768) {
+    			$('.name-container').css(
+    			{
+    				position: 'absolute',
+    			    left: ($(window).width() - $('.name-container').outerWidth()) / 2,
+    			    top: ($(window).height() - $('.name-container').outerHeight()) / 2,
+    			    opacity: 1
+    			});
+    		}
+    		else {
+    			$('.name-container').css(
+    			{
+    				position: 'relative',
+    				top: 0,
+    				left: 0
+    			});
+    		}
+    	    
+    	
+    		$(window).resize(function()
+    		{
+    			if($(window).width() > 768) {
+	    			$('.name-container').css(
+	    			{
+	    				position: 'absolute',
+	    				left: ($(window).width() - $('.name-container').outerWidth()) / 2,
+	    				top: (($(window).height() - $('.name-container').outerHeight()) / 2) - 10,
+	    				opacity: 1
+	    			});
+	    		}
+	    		else {
+	    			$('.name-container').css(
+	    			{
+	    				position: 'relative',
+	    				top: 0,
+	    				left: 0
+	    			});
+	    		}
+    		});
+    		
+    		// call `resize` to center elements
+    		$(window).resize();
+	    });
+		</script>
+		<style type="text/css">
+			body.background {
+				background-image: url('assets/img/wall2.jpg');
+    			background-size: cover;
+				background-repeat:no-repeat;
+				padding: 0px;
+				margin: 0px;
+				background-position: center center;
+				height: 100%;
+				background-color: #000;
+				background-attachment: fixed;
+			}
+			.blurred-background {
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+				background-size: cover;
+				background-position: center center;
+				background-attachment: fixed;
+			}
+			
+		</style>
+	
+</head>
+	
+	<body class="background">
+	
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<a class="navbar-brand" href="/">Omar Sobh - ONS</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="active"	><a href="portfolio2.html">Portfolio</a></li>
+						<li><a href="assets/img/resume.pdf">Resume</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="blurred-background ">
+			<main class="name-container">
+				<img src="assets/img/logo.png" alt="logo" class="logo"  />
+				<hr />
+				<h1>Omar<span style="font-weight: 400;">Sobh</span></h1>
+			
+		  <div class="grid">
+		  <div class="element-item transition metal " data-category="transition">
+		    <h3 class="name">CloudSounds</h3>
+		    <p class="symbol">CS</p>
+		    <p class="number">16</p>
+		    <p class="weight">200.59</p>
+		  </div>
+		  <div class="element-item metalloid " data-category="metalloid">
+		    <h3 class="name">Tellurium</h3>
+		    <p class="symbol">Te</p>
+		    <p class="number">52</p>
+		    <p class="weight">127.6</p>
+		  </div>
+		  <div class="element-item post-transition metal " data-category="post-transition">
+		    <h3 class="name">Bismuth</h3>
+		    <p class="symbol">Bi</p>
+		    <p class="number">83</p>
+		    <p class="weight">208.980</p>
+		  </div>
+		  <div class="element-item post-transition metal " data-category="post-transition">
+		    <h3 class="name">Lead</h3>
+		    <p class="symbol">Pb</p>
+		    <p class="number">82</p>
+		    <p class="weight">207.2</p>
+		  </div>
+		  <div class="element-item transition metal " data-category="transition">
+		    <h3 class="name">Gold</h3>
+		    <p class="symbol">Au</p>
+		    <p class="number">79</p>
+		    <p class="weight">196.967</p>
+		  </div>
+		  <div class="element-item alkali metal " data-category="alkali">
+		    <h3 class="name">Potassium</h3>
+		    <p class="symbol">K</p>
+		    <p class="number">19</p>
+		    <p class="weight">39.0983</p>
+		  </div>
+		  <div class="element-item alkali metal " data-category="alkali">
+		    <h3 class="name">Sodium</h3>
+		    <p class="symbol">Na</p>
+		    <p class="number">11</p>
+		    <p class="weight">22.99</p>
+		  </div>
+		  <div class="element-item transition metal " data-category="transition">
+		    <h3 class="name">Cadmium</h3>
+		    <p class="symbol">Cd</p>
+		    <p class="number">48</p>
+		    <p class="weight">112.411</p>
+		  </div>
+		  <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
+		    <h3 class="name">Calcium</h3>
+		    <p class="symbol">Ca</p>
+		    <p class="number">20</p>
+		    <p class="weight">40.078</p>
+		  </div>
+		  <div class="element-item transition metal " data-category="transition">
+		    <h3 class="name">Rhenium</h3>
+		    <p class="symbol">Re</p>
+		    <p class="number">75</p>
+		    <p class="weight">186.207</p>
+		  </div>
+		  <div class="element-item post-transition metal " data-category="post-transition">
+		    <h3 class="name">Thallium</h3>
+		    <p class="symbol">Tl</p>
+		    <p class="number">81</p>
+		    <p class="weight">204.383</p>
+		  </div>
+		</div>			
+	</div>
+<script>
+	// init Isotope
+var $grid = $('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+</script>
+	</body>
+</html>
